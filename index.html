@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.122.0">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/aos.css">
+    <link rel="stylesheet" type="text/css" href="css/glightbox.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <title>Portfolio</title>
+    <style>
+
+         body {
+            font-family: "Karla", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        @media (min-width: 100px) {
+            .whatsapp-button-sm {
+            position:fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            border-radius: 50px;
+            padding: 4px;
+            width: 8%;
+            z-index:1000; 
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        @media (min-width: 768px) {
+            .whatsapp-button-md {
+            position:fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            border-radius: 50px;
+            padding: 10px;
+            width: 5%;
+            z-index:1000; 
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            }
+        }        
+        
+        @media (min-width: 992px){
+            .whatsapp-button {
+            position:fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            border-radius: 50px;
+            padding: 7px;
+            width: 3%;
+            z-index:1000; 
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            }
+        }
+        .whatsapp-button img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .bgcol{
+            background-color: #0000ff;
+        }
+
+        .bgcol2{
+            background-color: #0000ff;
+        }   
+ 
+        .bgcol3{
+            background-color: #ff9900;
+        }   
+ 
+        header li .text-white:hover::after{
+            content: '';
+            background: #00ffff;
+            height: 2px;
+            width: 50px;            
+            margin-right: auto;
+            display: block;
+            transform: translateY(6px) !important;
+        }
+
+        .aboutme{
+            line-height: 40px;
+        }
+
+        .test .card-body{
+            background-image: linear-gradient(200deg, navy, #04f);  
+            color: white;
+            min-height: 400px;
+        }
+
+        .transform-text{
+            text-transform:uppercase;
+            letter-spacing: 6px;
+            font-weight: bold;
+            
+        }
+
+        .zonal{
+            background-image: 
+            url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="%23ff9900"><path d="M0 1v99c134.3 0 153.7-99 296-99H0Z" opacity=".5"></path><path d="M1000 4v86C833.3 90 833.3 3.6 666.7 3.6S500 90 333.3 90 166.7 4 0 4h1000Z" opacity=".5"></path><path d="M617 1v86C372 119 384 1 196 1h421Z" opacity=".5"></path><path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"></path></svg>');
+        }
+
+        footer .text-warning-c{
+            color: #ffc107;
+        }
+
+        footer .text-warning-c:hover{
+            color: #f7d56e;
+        }
+    </style>
+</head>
+
+<body>    
+    <header class="navbar navbar-expand-lg p-3 bgcol fixed-top">
+        <nav class="collapse navbar-collapse d-lg-flex container">
+            
+            <a class="navbar-brand fs-2 transform-text text-white" href="https://github.com/Temmycoder" target="_blank">
+                Temmy<span class="">coder</span></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#features">Features</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#skill">Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#portfolio">Portfolio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#testimonial">Testimonials</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>                                
+        </nav>        
+    </header>
+
+    <section class="mt-4 pt-5 text-white" data-aos="fade-down" data-aos-duration="1000">
+        <div class="bgcol3 py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-6 mt-5 pt-5 text-center text-md-start">
+                        <h1>Hello, I am Temiloluwa</h1>
+                        <h3 id="typed-text"></h3>
+                        <form action="mailto:oladutemutemiloluwa@icloud.com" method="post">
+                            <button class="btn  mt-4" style="background-color: #0000ff;color:white;">
+                                Get in Touch
+                            </button>
+                        </form>
+                    </div>
+        
+                    <div class="col-md-6 pt-5 pt-md-0">
+                        <img src="img/profile-port.jpg" alt="img" class="img-fluid rounded-circle" width="450">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="zonal pt-1"></div>
+    </section>
+
+    <section class="container-fluid bg-light mb-5 py-5" id="about" data-aos="fade-right" data-aos-duration="1000">
+        <div class="container py-5 text-md-center"> 
+            <div class="container">
+                <h1 class="display-4 fw-normal text-center">About Me</h1>
+                <h5 class="mx-lg-3 aboutme">
+                    Hello! I'm Temiloluwa, a passionate Frontend developer with a focus on creating clean, modern, and responsive websites. With six months of hands-on experience, I’ve successfully delivered eight projects, including personal and corporate landing pages and robust admin dashboards.
+                    I specialize in HTML5, CSS3, Bootstrap 5, and JavaScript libraries to craft seamless user experiences. My workflow is powered by industry-standard tools like GitHub and Visual Studio Code, and I enhance every project with dynamic icons from Font Awesome and fonts from Google Fonts
+                    Driven by the belief that a great design is not only visually appealing but also user-centered, I am always open to collaborations, freelance gigs, and full-time opportunities. Let’s build something exceptional together!
+                </h5>  
+            </div>
+        </div>       
+    </section>
+
+    <section class="container-fluid my-5 py-5" id="features">
+        <div class="container my-5 py-5">
+            <div class="row text-center g-4">
+                <div class="col-md-4" data-aos="flip-up" data-aos-duration="1000">
+                    <div class="card shadow bgcol2 border-0">
+                        <div class="card-body text-white">
+                            <i class="fa fa-chart-line fa-2x text-warning"></i>
+                            <h1 class="purecounter" data-purecounter-end="14" data-purecounter-duration="1"
+                            data-purecounter-pulse="5">0</h1>
+                            <h4>Projects</h4>
+                        </div>
+                    </div>
+                </div>                
+
+                <div class="col-md-4" data-aos="flip-right" data-aos-duration="1000">
+                    <div class="card shadow bg-light border-0">
+                        <div class="card-body">
+                            <i class="fa fa-face-smile fa-2x text-warning"></i>
+                            <h1 class="purecounter" data-purecounter-end="8"
+                            data-purecounter-duration="1" data-purecounter-pulse="5">0</h1>
+                            <h4>Happy Clients</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="flip-up" data-aos-duration="1000">
+                    <div class="card bgcol2 shadow border-0">
+                        <div class="card-body text-white">
+                            <i class="fa fa-clock fa-2x text-warning"></i>
+                            <h1 class="purecounter" data-purecounter-end="24"
+                                    data-purecounter-duration="1" data-purecounter-pulse="5">0</h1>
+                            <h4>Hours of Support</h4>
+                        </div>
+                    </div>   
+                </div>                
+                                         
+            </div>
+        </div>        
+    </section>
+
+    <section class="container-fluid my-5 bg-light py-4" id="skill">
+        <div class="container py-5" data-aos="zoom-in-down" data-aos-duration="1000">
+            <div class="text-center">
+                <h1 class="display-4 fw-normal">Skills</h1>
+            </div>
+        
+            <div class="row g-4">
+                <div class="col-md-6">
+                    HTML
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bgcol2" style="width: 100%">100%</div>
+                    </div>
+                </div>
+    
+                <div class="col-md-6">
+                    CSS
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bgcol2" style="width: 100%">100%</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row mt-2 g-4">
+                <div class="col-md-6">
+                    JAVASCRIPT
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bgcol2" style="width: 73%">73%</div>
+                    </div>
+                </div>
+            
+                <div class="col-md-6">
+                    PHOTOSHOP
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bgcol2" style="width: 60%">60%</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row mt-2 g-4">
+                <div class="col-md-6">
+                    VSCODE
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bgcol2" style="width: 100%">100%</div>
+                    </div>
+                </div>
+    
+                <div class="col-md-6">
+                    GITHUB
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bgcol2" style="width: 100%">100%</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row mt-2 g-4">
+                <div class="col-md-6">
+                    BOOTSTRAP
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bgcol2" style="width: 90%">90%</div>
+                    </div>
+                </div>
+    
+                <div class="col-md-6">
+                    FONT AWESOME
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bgcol2" style="width: 100%">100%</div>
+                </div>
+            </div>            
+        </div>        
+    </section>
+
+    <section class="container py-5" id="portfolio">
+        <div class="text-center">
+            <h1 class="display-4 fw-normal">Portfolio</h1>
+            <h4>Click on the projects below to view full screen website</h4>
+        </div>
+        
+        <div class="row g-4 mt-5" data-aos="zoom-in-up">
+            <div class="col-6 col-md-3 border">
+                <a href="https://temmycoder.github.io/landrick" target="_blank"><img src="img/temmycoder-github-io-480x800phone-928a05.jpg" alt="img" class="img-fluid"></a>
+            </div>            
+
+            <div class="col-6 col-md-3">
+                <a href="https://temmycoder.github.io/Starlite" target="_blank"><img src="img/temmycoder-github-io-480x800phone-1410a6.jpg" alt="img" class="img-fluid" height="40%"></a>
+            </div>
+            
+            <div class="col-6 col-md-3">
+                <a href="https://temmycoder.github.io/bootslander" target="_blank"><img src="img/temmycoder-github-io-480x800phone-30a677.jpg" alt="img" class="img-fluid" height="40%"></a>
+
+            </div>
+            
+            <div class="col-6 col-md-3 border">
+                <a href="https://temmycoder.github.io/Winck" target="_blank"><img src="img/temmycoder-github-io-480x800phone-e29ce1.jpg" alt="img" class="img-fluid" height="40%"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid my-5 py-5 bg-light" id="testimonial">
+        <div class="text-center pt-5">
+            <h1 class="display-4 fw-normal">What Clients Say?</h1>
+            <h4>Discover what my satisfied customers have to say about their experiences with my services.</h4>
+        </div>
+        
+        <div class="row mt-5 test g-4 justify-items-self mb-5">
+            <div class="col- 12 col-lg-4" data-aos="fade-up" data-aos-duration="500">
+                <div class="card border-0 shadow">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <img src="img/images1.jpg" class="rounded-circle img-thumbnail" width="80">
+                            <h4>Nathan Patel</h4>
+                            <p>Enterpreneur</p>
+                        </div>
+                        <p class="text-center">I have started using his services two months ago did not dissapoint me, his web design skills 
+                            are top notch and I love the way he implements color combinations using the company brand or logo. I rate him 
+                            five stars.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-duration="800">
+                <div class="card border-0 shadow">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <img src="img/AI-Profile-Picture.jpg" class="rounded-circle img-thumbnail" width="80">
+                            <h4>Esperanza Martez</h4>
+                            <p>Fashion Designer</p>
+                        </div>                        
+                        <p class="text-center">We didn't think having an online web would improve our fashion business much but we were wrong cause we have gotten
+                             so many more clients reffered from the web he created for us, keep the ball rolling Temmycoder.</p>
+                    </div>
+                </div>
+            </div>           
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1100">
+                <div class="card border-0 shadow">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <img src="img/women-AI-Profile-Picture.jpg" class="rounded-circle img-thumbnail" width="80">
+                            <h4>Jena Karlis</h4>
+                            <p>CEO</p>
+                        </div>
+                        <p class="text-center">My organisation has used different web developers but this guy has surpassed our expectations, his web gave me more
+                            inspiration on my project. I am rating him four stars for his excellence. I look forward to patronizing you in future.</p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    <section class="container text-center pt-5 mt-5" id="contact">        
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+                <div class="text-center mb-4">
+                    <h1 class="display-4 fw-normal">Contact Me</h1>
+                    <h4>Let's build something amazing</h4>
+                </div>
+                
+                <form method="post" action="mailto:oladutemutemiloluwa@icloud.com">
+                    <button class="btn btn-warning px-5 py-2 text-white">Mail</button>                                    
+                </form>                
+            </div>
+            <div class="col-lg-3"></div>
+        </div>                        
+    </section>
+
+    <footer class="container-fluid text-center text-white bg-black mt-5">
+        <div class="container pb-4 pt-5">
+            <div>
+                <p>&copy; All Rights Reserved<br>
+                Designed by <a href="https://github.com/Temmycoder" target="_blank" class="navbar-brand text-warning-c">Temmycoder</a></p>
+            </div>
+            <div>
+                <a href="https://wa.me/2347066246499" target="_blank">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                  class="whatsapp-button whatsapp-button-sm whatsapp-button-md img-fluid" alt="WhatsApp">
+                </a>
+            </div>
+        </div>        
+    </footer>
+</body>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script src="js/aos.js" type="text/javascript"></script>
+    <script src="js/glightbox.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/all.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+
+    <script>
+        AOS.init();
+         // Initialize PureCounter by Default. It also can be stored on variable
+         new PureCounter();
+                  // Initialize PureCounter using custom selector and custom default configuration.
+                  // It also can be stored on variable
+                  new PureCounter({
+                      filesizing: true,
+                      selector: ".filesizecount",
+                      pulse: 2,
+                  });
+    </script>
+    
+    <script>
+        // Initialize GLightbox
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+            autoplayVideos: true,
+        });
+    </script>
+
+   <script>
+    var typed = new Typed('#typed-text', {
+      strings: ["I'm A web developer.", "I love coding!", "I'm A Designer", "I'm A Freelancer", "I'm A Programmer" ], 
+      typeSpeed: 50,      // Typing speed in milliseconds
+      backSpeed: 25,      // Backspacing speed in milliseconds
+      loop: true,          // Set to true for looping the animation
+      showCursor: false,
+    //   cursorChar: '_',    // Customize the cursor
+    });
+  </script>
+</html>
