@@ -17,7 +17,7 @@
     <title>TemmyCoder</title>
     <style>
 
-         body {
+        body {
             font-family: "Karla", sans-serif;
             font-optical-sizing: auto;
             font-weight: 500;
@@ -115,6 +115,7 @@
 
         .zonal{
             background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="%23000000"><path d="M0 1v99c134.3 0 153.7-99 296-99H0Z" opacity=".5"></path><path d="M1000 4v86C833.3 90 833.3 3.6 666.7 3.6S500 90 333.3 90 166.7 4 0 4h1000Z" opacity=".5"></path><path d="M617 1v86C372 119 384 1 196 1h421Z" opacity=".5"></path><path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"></path></svg>');
+            background-repeat: repeat-x;
         }
 
         footer .text-warning-c{
@@ -127,75 +128,79 @@
     </style>
 </head>
 
-<body>    
-    <header class="navbar navbar-expand-lg p-3 bg-black fixed-top">
-        <nav class="collapse navbar-collapse d-lg-flex container">
+<body>
+
+    <section class="bg-black">
+        <header class="navbar navbar-expand-lg p-3 bg-black fixed-top">
+            <nav class="collapse navbar-collapse d-lg-flex container">
+                
+                <a class="navbar-brand fs-3 transform-text text-white" href="https://github.com/Temmycoder" target="_blank">
+                    Temmy<span class="text-warning">Coder</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto fs-5">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#about">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#features">Features</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#skill">Skills</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#projects">Projects</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#testimonial">Testimonials</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>                                
+            </nav>        
+        </header>
+
+        <div class="mt-4 pt-5 text-white" data-aos="fade-down" data-aos-duration="1000">
+            <div class="bg-black py-5">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-md-6 mt-5 pt-5 text-center text-md-start">
+                            <h1>Hello, I am Temiloluwa</h1>
+                            <h3><span id="typed-text"></span></h3>
+                            <form action="mailto:oladutemutemiloluwa@icloud.com" method="post">
+                                <button class="btn mt-4" style="background-color: #0000ff; color: white;">
+                                    Get in Touch
+                                </button>
+                            </form>
+                        </div>
             
-            <a class="navbar-brand fs-2 transform-text text-white" href="https://github.com/Temmycoder" target="_blank">
-                Temmy<span class="">Coder</span>
-            </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto fs-5">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#about">About</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#features">Features</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#skill">Skills</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#projects">Projects</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#testimonial">Testimonials</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>                                
-        </nav>        
-    </header>
-
-    <section class="mt-4 pt-5 text-white" data-aos="fade-down" data-aos-duration="1000">
-        <div class="bg-black py-5">
-            <div class="container">
-                <div class="row g-4">
-                    <div class="col-md-6 mt-5 pt-5 text-center text-md-start">
-                        <h1>Hello, I am Temiloluwa</h1>
-                        <h3 id="typed-text"></h3>
-                        <form action="mailto:oladutemutemiloluwa@icloud.com" method="post">
-                            <button class="btn mt-4" style="background-color: #0000ff; color: white;">
-                                Get in Touch
-                            </button>
-                        </form>
-                    </div>
-        
-                    <div class="col-md-6 pt-5 pt-md-0">
-                        <img src="img/profile-port.jpg" alt="img" class="img-fluid rounded-circle" width="450">
+                        <div class="col-md-6 pt-5 pt-md-0">
+                            <img src="img/profile-port.jpg" alt="img" class="img-fluid rounded-circle" width="450">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="zonal pt-5"></div>
+        </div>
     </section>
+
+    <div class="zonal pt-5"></div>
 
     <section class="container-fluid bg-light mb-5 py-5" id="about" data-aos="fade-right" data-aos-duration="1000">
         <div class="container py-5"> 
@@ -203,14 +208,14 @@
                 <h1 class="display-4 fw-normal text-center">About Me</h1>
                 <h5 class="mx-lg-3 aboutme">
                     Hello! I'm Temiloluwa, a passionate Website developer with a focus on creating clean, modern, and responsive websites. 
-                    With six months of hands-on experience, I've successfully delivered eight projects, including personal and corporate landing pages and 
+                    With 6+ months of hands-on experience, I've successfully delivered eight projects, including personal and corporate landing pages and 
                     robust admin dashboards. I specialize in HTML5, CSS3, Bootstrap 5, and JavaScript libraries to craft seamless user experiences. 
                     My workflow is powered by industry-standard tools like GitHub and Visual Studio Code, and I enhance every project with dynamic icons 
                     from Font Awesome and fonts from Google Fonts Driven by the belief that a great design is not only visually appealing but also user-centered,
                     I am always open to collaborations, freelance gigs, and full-time opportunities. Let's build something exceptional together!
-                </h5>  
+                </h5>
             </div>
-        </div>       
+        </div>
     </section>
 
     <section class="container-fluid my-5 py-5" id="features">
@@ -220,35 +225,31 @@
                     <div class="card shadow bgcol2 border-0">
                         <div class="card-body text-white">
                             <i class="fa fa-chart-line fa-2x text-warning"></i>
-                            <h1 class="purecounter" data-purecounter-end="14" data-purecounter-duration="1"
-                            data-purecounter-pulse="5">0</h1>
+                            <h1><span class="purecounter" data-purecounter-end="20" data-purecounter-duration="1" data-purecounter-pulse="5"></span>+</h1>
                             <h4>Projects</h4>
                         </div>
                     </div>
-                </div>                
+                </div>
 
                 <div class="col-md-4" data-aos="flip-right" data-aos-duration="1000">
                     <div class="card shadow bg-light border-0">
                         <div class="card-body">
                             <i class="fa fa-face-smile fa-2x text-warning"></i>
-                            <h1 class="purecounter" data-purecounter-end="8"
-                            data-purecounter-duration="1" data-purecounter-pulse="5">0</h1>
-                            <h4>Happy Clients</h4>
+                            <h1><span class="purecounter" data-purecounter-end="10" data-purecounter-duration="1" data-purecounter-pulse="5"></span>+</h1>
+                            <h4>Skills</h4>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-4" data-aos="flip-up" data-aos-duration="1000">
                     <div class="card bgcol2 shadow border-0">
                         <div class="card-body text-white">
                             <i class="fa fa-clock fa-2x text-warning"></i>
-                            <h1 class="purecounter" data-purecounter-end="24"
-                                    data-purecounter-duration="1" data-purecounter-pulse="5">0</h1>
+                            <h1 class="purecounter" data-purecounter-end="14" data-purecounter-duration="1" data-purecounter-pulse="5"></h1>
                             <h4>Hours of Support</h4>
                         </div>
-                    </div>   
-                </div>                
-                                         
+                    </div>
+                </div>                             
             </div>
         </div>        
     </section>
@@ -386,61 +387,63 @@
         </div>
     </section>
 
-    <section class="container my-5 py-5 bg-light" id="testimonial">
-        <div class="text-center pt-5">
-            <h1 class="display-4 fw-normal">What Clients Say?</h1>
-            <h4>Discover what my satisfied customers have to say about their experience with my services.</h4>
+    <section class="container-fluid my-5 py-5 bg-light" id="testimonial">
+        <div class="container">
+            <div class="text-center pt-5">
+                <h1 class="display-4 fw-normal">What Clients Say?</h1>
+                <h4>Discover what my satisfied customers have to say about their experience with my services.</h4>
+            </div>
+
+            <div class="row mt-5 test g-4 justify-items-self mb-5">
+                <div class="col- 12 col-lg-4" data-aos="fade-up" data-aos-duration="500">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img src="img/images1.jpg" class="rounded-circle img-thumbnail" width="80">
+                                <h4>Nathan Patel</h4>
+                                <p>Enterpreneur</p>
+                            </div>
+                            <p class="text-center">I have been using his services for a while and he has not dissapointed me, his web design skills 
+                                are top notch and I love the way he implements color combinations using the company brand or logo. I rate him 
+                                five stars.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4" data-aos="fade-up" data-aos-duration="800">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img src="img/AI-Profile-Picture.jpg" class="rounded-circle img-thumbnail" width="80">
+                                <h4>Esperanza Martez</h4>
+                                <p>Fashion Designer</p>
+                            </div>                        
+                            <p class="text-center">We didn't think having an online website would improve our fashion business much but we were wrong cause we have gotten
+                                 so many more clients reffered from the website he created for us, keep the ball rolling Temmycoder.</p>
+                        </div>
+                    </div>
+                </div>           
+    
+                <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1100">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img src="img/women-AI-Profile-Picture.jpg" class="rounded-circle img-thumbnail" width="80">
+                                <h4>Jena Karlis</h4>
+                                <p>CEO</p>
+                            </div>
+                            <p class="text-center">My organisation has used different web developers but this guy has surpassed our expectations, his web gave me more
+                                inspiration on my project. I am rating him four stars for his excellence. I look forward to patronizing you in future.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <div class="row mt-5 test g-4 justify-items-self mb-5">
-            <div class="col- 12 col-lg-4" data-aos="fade-up" data-aos-duration="500">
-                <div class="card border-0 shadow">
-                    <div class="card-body">
-                        <div class="text-center">
-                            <img src="img/images1.jpg" class="rounded-circle img-thumbnail" width="80">
-                            <h4>Nathan Patel</h4>
-                            <p>Enterpreneur</p>
-                        </div>
-                        <p class="text-center">I have been using his services for a while and he has not dissapointed me, his web design skills 
-                            are top notch and I love the way he implements color combinations using the company brand or logo. I rate him 
-                            five stars.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4" data-aos="fade-up" data-aos-duration="800">
-                <div class="card border-0 shadow">
-                    <div class="card-body">
-                        <div class="text-center">
-                            <img src="img/AI-Profile-Picture.jpg" class="rounded-circle img-thumbnail" width="80">
-                            <h4>Esperanza Martez</h4>
-                            <p>Fashion Designer</p>
-                        </div>                        
-                        <p class="text-center">We didn't think having an online website would improve our fashion business much but we were wrong cause we have gotten
-                             so many more clients reffered from the website he created for us, keep the ball rolling Temmycoder.</p>
-                    </div>
-                </div>
-            </div>           
-
-            <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1100">
-                <div class="card border-0 shadow">
-                    <div class="card-body">
-                        <div class="text-center">
-                            <img src="img/women-AI-Profile-Picture.jpg" class="rounded-circle img-thumbnail" width="80">
-                            <h4>Jena Karlis</h4>
-                            <p>CEO</p>
-                        </div>
-                        <p class="text-center">My organisation has used different web developers but this guy has surpassed our expectations, his web gave me more
-                            inspiration on my project. I am rating him four stars for his excellence. I look forward to patronizing you in future.</p>
-                    </div>
-                </div>
-            </div>
-        </div>        
     </section>
 
     <section class="container text-center pt-5 mt-5" id="contact">        
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-lg-3"></div>
             <div class="col-lg-6">
                 <div class="text-center mb-4">
@@ -449,19 +452,94 @@
                 </div>
                 
                 <form method="post" action="mailto:oladutemutemiloluwa@icloud.com">
-                    <button class="btn btn-warning px-5 py-2 text-white">Mail</button>                                    
+                    <button class="btn btn-warning px-5 py-2 text-white">Mail</button>
                 </form>                
             </div>
             <div class="col-lg-3"></div>
-        </div>                        
+        </div> -->
+        <div class="text-center mb-4">
+            <h1 class="display-4 fw-normal">Contact Me</h1>
+            <h4>Let's build something amazing</h4>
+        </div>
+        <div class="row mt-5 pt-3" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-md-4">
+                <div class="row mb-4" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-1">
+                        <i class="fab fa-github fs-3 icon"></i>
+                    </div>
+                    <div class="col-auto"></div>
+                    <div class="col-10">
+                        <address>
+                            <h5 class="about">Github Profile</h5>
+                            <p>Temmycoder</p>
+                        </address>
+                    </div>
+                </div>
+
+                <div class="row mb-4" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-1">
+                        <i class="fa fa-phone fs-3 icon"></i>
+                    </div>
+                    <div class="col-auto"></div>
+                    <div class="col-10">
+                        <h5 class="about">Call Me</h5>
+                        <p>+234 706 6246 499</p>
+                    </div>
+                </div>
+
+                <div class="row" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-1">
+                        <i class="far fa-envelope fs-3 icon"></i>
+                    </div>
+                    <div class="col-auto"></div>
+                    <div class="col-10">
+                        <h5 class="about">Email Address</h5>
+                        <p>oladutemutemiloluwa@icloud.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8 container">
+                <form method="post" action="">
+                    <div class="row">
+                        <div class="col-6">
+                            <input type="text" placeholder="First Name" name="first_name" required maxlength="30" minlength="3" class="form-control">
+                        </div>
+
+                        <div class="col-6">
+                            <input type="text" placeholder="Last Name" name="last_name" minlength="2" class="form-control">
+                        </div>
+                    </div><br><br>
+
+                    <div>
+                        <input type="email" placeholder="Your Email" name="sender_email" class="form-control">
+                    </div><br><br>
+
+                    <div>
+                        <textarea rows="6" placeholder="Message" class="form-control" name="message"></textarea>
+                    </div><br><br>
+
+                    <div class="text-center">
+                        <button type="submit" style="border-radius: 50px; border: #ffffff;" 
+                        class="text-bg-success pe-4 ps-4 pt-2 pb-2" name="send">Send Message</button>
+                    </div>
+                </form>                      
+            </div>
+        </div>
     </section>
 
     <footer class="container-fluid text-center text-white bg-black mt-5">
         <div class="container pb-4 pt-5">
-            <div>
-                <p>&copy; All Rights Reserved<br>
-                Designed by <a href="https://github.com/Temmycoder" target="_blank" class="navbar-brand text-warning-c">Temmycoder</a></p>
+            <div class="mb-3">
+                <a href="https://linkedin.com/temmycoder/" class="mx-4 text-white icon-link-hover"><i class="fab fa-linkedin fs-2"></i></a>
+                <a href="https://instagram" class="mx-4 text-white"><i class="fab fa-instagram fs-2"></i></a>
+                <a href="https://facebook" class="mx-4 text-white"><i class="fab fa-facebook fs-2"></i></a>
+                <a href="https://twitter" class="mx-4 text-white"><i class="fab fa-twitter fs-2"></i></a>
             </div>
+
+            <p>&copy; All Rights Reserved<br>
+            Designed by <a href="https://github.com/Temmycoder" target="_blank" class="navbar-brand text-warning-c">TemmyCoder</a></p>
+
             <div>
                 <a href="https://wa.me/2347066246499" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
@@ -506,12 +584,12 @@
 
    <script>
     var typed = new Typed('#typed-text', {
-      strings: ["I'm A web developer.", "I love coding!", "I'm A Designer", "I'm A Freelancer", "I'm A Programmer" ], 
+      strings: ["I'm a web developer", "I love coding!", "I'm a Designer", "I'm a Freelancer", "I'm a Programmer", "I'm a Software Developer" ], 
       typeSpeed: 50,      // Typing speed in milliseconds
-      backSpeed: 25,      // Backspacing speed in milliseconds
+      backSpeed: 15,      // Backspacing speed in milliseconds
       loop: true,          // Set to true for looping the animation
-      showCursor: false,
-    //   cursorChar: '_',    // Customize the cursor
+      showCursor: true,
+       //cursorChar: '_',    // Customize the cursor
     });
   </script>
 </html>
