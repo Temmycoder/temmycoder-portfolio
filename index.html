@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.122.0">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <link rel="stylesheet" type="text/css" href="css/all.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <meta name="description" content="Temmycoder's Portfolio">
+    <meta name="author" content="Temmycoder, Temiloluwa, Software Developer">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/aos.css">
     <link rel="stylesheet" type="text/css" href="css/glightbox.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 
-    <title>Portfolio</title>
+    <title>TemmyCoder</title>
     <style>
 
          body {
@@ -22,6 +22,9 @@
             font-optical-sizing: auto;
             font-weight: 500;
             font-style: normal;
+            background-image: url("img/");
+            /*background-repeat: no-repeat;
+            background-size: cover; */
         }
 
         @media (min-width: 100px) {
@@ -65,6 +68,7 @@
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
             }
         }
+
         .whatsapp-button img {
             width: 50px;
             height: 50px;
@@ -86,32 +90,31 @@
             content: '';
             background: #00ffff;
             height: 2px;
-            width: 50px;            
+            width: 50px;
             margin-right: auto;
             display: block;
             transform: translateY(6px) !important;
         }
 
         .aboutme{
-            line-height: 40px;
+            line-height: 33px;
         }
 
         .test .card-body{
             background-image: linear-gradient(200deg, navy, #04f);  
             color: white;
             min-height: 400px;
+            border-radius: 10px;
         }
 
         .transform-text{
             text-transform:uppercase;
             letter-spacing: 6px;
             font-weight: bold;
-            
         }
 
         .zonal{
-            background-image: 
-            url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="%23ff9900"><path d="M0 1v99c134.3 0 153.7-99 296-99H0Z" opacity=".5"></path><path d="M1000 4v86C833.3 90 833.3 3.6 666.7 3.6S500 90 333.3 90 166.7 4 0 4h1000Z" opacity=".5"></path><path d="M617 1v86C372 119 384 1 196 1h421Z" opacity=".5"></path><path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"></path></svg>');
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="%23000000"><path d="M0 1v99c134.3 0 153.7-99 296-99H0Z" opacity=".5"></path><path d="M1000 4v86C833.3 90 833.3 3.6 666.7 3.6S500 90 333.3 90 166.7 4 0 4h1000Z" opacity=".5"></path><path d="M617 1v86C372 119 384 1 196 1h421Z" opacity=".5"></path><path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"></path></svg>');
         }
 
         footer .text-warning-c{
@@ -125,11 +128,12 @@
 </head>
 
 <body>    
-    <header class="navbar navbar-expand-lg p-3 bgcol fixed-top">
+    <header class="navbar navbar-expand-lg p-3 bg-black fixed-top">
         <nav class="collapse navbar-collapse d-lg-flex container">
             
             <a class="navbar-brand fs-2 transform-text text-white" href="https://github.com/Temmycoder" target="_blank">
-                Temmy<span class="">coder</span></a>
+                Temmy<span class="">Coder</span>
+            </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -154,7 +158,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#portfolio">Portfolio</a>
+                        <a class="nav-link text-white" href="#projects">Projects</a>
                     </li>
 
                     <li class="nav-item">
@@ -170,14 +174,14 @@
     </header>
 
     <section class="mt-4 pt-5 text-white" data-aos="fade-down" data-aos-duration="1000">
-        <div class="bgcol3 py-5">
+        <div class="bg-black py-5">
             <div class="container">
                 <div class="row g-4">
                     <div class="col-md-6 mt-5 pt-5 text-center text-md-start">
                         <h1>Hello, I am Temiloluwa</h1>
                         <h3 id="typed-text"></h3>
                         <form action="mailto:oladutemutemiloluwa@icloud.com" method="post">
-                            <button class="btn  mt-4" style="background-color: #0000ff;color:white;">
+                            <button class="btn mt-4" style="background-color: #0000ff; color: white;">
                                 Get in Touch
                             </button>
                         </form>
@@ -190,17 +194,20 @@
             </div>
         </div>
 
-        <div class="zonal pt-1"></div>
+        <div class="zonal pt-5"></div>
     </section>
 
     <section class="container-fluid bg-light mb-5 py-5" id="about" data-aos="fade-right" data-aos-duration="1000">
-        <div class="container py-5 text-md-center"> 
+        <div class="container py-5"> 
             <div class="container">
                 <h1 class="display-4 fw-normal text-center">About Me</h1>
                 <h5 class="mx-lg-3 aboutme">
-                    Hello! I'm Temiloluwa, a passionate Frontend developer with a focus on creating clean, modern, and responsive websites. With six months of hands-on experience, I’ve successfully delivered eight projects, including personal and corporate landing pages and robust admin dashboards.
-                    I specialize in HTML5, CSS3, Bootstrap 5, and JavaScript libraries to craft seamless user experiences. My workflow is powered by industry-standard tools like GitHub and Visual Studio Code, and I enhance every project with dynamic icons from Font Awesome and fonts from Google Fonts
-                    Driven by the belief that a great design is not only visually appealing but also user-centered, I am always open to collaborations, freelance gigs, and full-time opportunities. Let’s build something exceptional together!
+                    Hello! I'm Temiloluwa, a passionate Website developer with a focus on creating clean, modern, and responsive websites. 
+                    With six months of hands-on experience, I've successfully delivered eight projects, including personal and corporate landing pages and 
+                    robust admin dashboards. I specialize in HTML5, CSS3, Bootstrap 5, and JavaScript libraries to craft seamless user experiences. 
+                    My workflow is powered by industry-standard tools like GitHub and Visual Studio Code, and I enhance every project with dynamic icons 
+                    from Font Awesome and fonts from Google Fonts Driven by the belief that a great design is not only visually appealing but also user-centered,
+                    I am always open to collaborations, freelance gigs, and full-time opportunities. Let's build something exceptional together!
                 </h5>  
             </div>
         </div>       
@@ -317,10 +324,46 @@
         </div>        
     </section>
 
-    <section class="container py-5" id="portfolio">
+    <!-- <section class="container-fluid my-5 py-4" id="skill">
+        <div class="container py-5" data-aos="flip-up" data-aos-duration="1000">
+            <div class="text-center">
+                <h1 class="display-4 fw-normal">Services</h1>
+            </div>
+
+            <div class="row g-4 justify-items-self mb-5">
+                <div class="col- 12 col-lg-4" data-aos="flip-right" data-aos-duration="500">
+                    <div class="card border-0 shadow">
+                        <div class="card-body text-center">
+                            <h4>Website Development</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4" data-aos="flip-right" data-aos-duration="800">
+                    <div class="card border-0 shadow">
+                        <div class="card-body text-center">
+                            <h4>Brands design</h4>
+                            
+                        </div>
+                    </div>
+                </div>           
+
+                <div class="col-lg-4" data-aos="flip-right" data-aos-duration="1100">
+                    <div class="card border-0 shadow">
+                        <div class="card-body text-center">
+                            <h4>Graphics Design</h4>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </section> -->
+
+    <section class="container py-5" id="projects">
         <div class="text-center">
-            <h1 class="display-4 fw-normal">Portfolio</h1>
-            <h4>Click on the projects below to view full screen website</h4>
+            <h1 class="display-4 fw-normal">Projects</h1>
+            <h4>Click on the images below to view the project websites</h4>
         </div>
         
         <div class="row g-4 mt-5" data-aos="zoom-in-up">
@@ -343,10 +386,10 @@
         </div>
     </section>
 
-    <section class="container-fluid my-5 py-5 bg-light" id="testimonial">
+    <section class="container my-5 py-5 bg-light" id="testimonial">
         <div class="text-center pt-5">
             <h1 class="display-4 fw-normal">What Clients Say?</h1>
-            <h4>Discover what my satisfied customers have to say about their experiences with my services.</h4>
+            <h4>Discover what my satisfied customers have to say about their experience with my services.</h4>
         </div>
         
         <div class="row mt-5 test g-4 justify-items-self mb-5">
@@ -358,7 +401,7 @@
                             <h4>Nathan Patel</h4>
                             <p>Enterpreneur</p>
                         </div>
-                        <p class="text-center">I have started using his services two months ago did not dissapoint me, his web design skills 
+                        <p class="text-center">I have been using his services for a while and he has not dissapointed me, his web design skills 
                             are top notch and I love the way he implements color combinations using the company brand or logo. I rate him 
                             five stars.
                         </p>
@@ -374,8 +417,8 @@
                             <h4>Esperanza Martez</h4>
                             <p>Fashion Designer</p>
                         </div>                        
-                        <p class="text-center">We didn't think having an online web would improve our fashion business much but we were wrong cause we have gotten
-                             so many more clients reffered from the web he created for us, keep the ball rolling Temmycoder.</p>
+                        <p class="text-center">We didn't think having an online website would improve our fashion business much but we were wrong cause we have gotten
+                             so many more clients reffered from the website he created for us, keep the ball rolling Temmycoder.</p>
                     </div>
                 </div>
             </div>           
@@ -432,12 +475,12 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script src="js/purecounter.js"></script>
     <script src="js/aos.js" type="text/javascript"></script>
     <script src="js/glightbox.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="js/all.js" type="text/javascript"></script>
-    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/all.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
 
     <script>
         AOS.init();
