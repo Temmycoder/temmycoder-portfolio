@@ -22,9 +22,6 @@
             font-optical-sizing: auto;
             font-weight: 500;
             font-style: normal;
-            background-image: url("img/");
-            /*background-repeat: no-repeat;
-            background-size: cover; */
         }
 
         @media (min-width: 100px) {
@@ -75,11 +72,11 @@
         }
 
         .bgcol{
-            background-color: #0000ff;
+            background-color: #ff9900;
         }
 
         .bgcol2{
-            background-color: #0000ff;
+            background-color: #ff9900;
         }   
  
         .bgcol3{
@@ -101,7 +98,7 @@
         }
 
         .test .card-body{
-            background-image: linear-gradient(200deg, navy, #04f);  
+            background-color: black;  
             color: white;
             min-height: 400px;
             border-radius: 10px;
@@ -125,20 +122,41 @@
         footer .text-warning-c:hover{
             color: #f7d56e;
         }
+/* 
+        button{
+            position: relative;
+        }
+
+        button::after{
+            content: "s";
+            background-color: yellow;
+            display: block;
+            position: absolute;
+            margin-top: -10%;
+            margin-left: 0%;
+            padding-top: 100%;
+            width: 100%;
+            opacity: 1;
+        }
+
+        button:hover::after{
+            width: 100%;
+            opacity: 0;
+        } */
     </style>
 </head>
 
 <body>
 
     <section class="bg-black">
-        <header class="navbar navbar-expand-lg p-3 bg-black fixed-top">
+        <header class="navbar navbar-dark navbar-expand-lg p-3 bg-black fixed-top">
             <nav class="collapse navbar-collapse d-lg-flex container">
-                
-                <a class="navbar-brand fs-3 transform-text text-white" href="https://github.com/Temmycoder" target="_blank">
+                <a class="nav-link fs-3 transform-text text-white" href="https://github.com/Temmycoder" target="_blank">
                     Temmy<span class="text-warning">Coder</span>
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -150,10 +168,6 @@
 
                         <li class="nav-item">
                             <a class="nav-link text-white" href="#about">About</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#features">Features</a>
                         </li>
 
                         <li class="nav-item">
@@ -176,15 +190,16 @@
             </nav>        
         </header>
 
-        <div class="mt-4 pt-5 text-white" data-aos="fade-down" data-aos-duration="1000">
+        <div class="mt-4 pt-md-5 text-white" data-aos="fade-down" data-aos-duration="1000">
             <div class="bg-black py-5">
                 <div class="container">
                     <div class="row g-4">
                         <div class="col-md-6 mt-5 pt-5 text-center text-md-start">
                             <h1>Hello, I am Temiloluwa</h1>
-                            <h3><span id="typed-text"></span></h3>
+                            <h3><span id="typed-text"></span></h3><br>
+                            <h5>I build engaging websites for businesses and companies to boost their online recognition and Marketing</h5>
                             <form action="mailto:oladutemutemiloluwa@icloud.com" method="post">
-                                <button class="btn mt-4" style="background-color: #0000ff; color: white;">
+                                <button class="btn mt-4" style="background-color: #ff9900; color: white;">
                                     Get in Touch
                                 </button>
                             </form>
@@ -196,7 +211,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -207,18 +221,16 @@
             <div class="container">
                 <h1 class="display-4 fw-normal text-center">About Me</h1>
                 <h5 class="mx-lg-3 aboutme">
-                    Hello! I'm Temiloluwa, a passionate Website developer with a focus on creating clean, modern, and responsive websites. 
-                    With 6+ months of hands-on experience, I've successfully delivered eight projects, including personal and corporate landing pages and 
-                    robust admin dashboards. I specialize in HTML5, CSS3, Bootstrap 5, and JavaScript libraries to craft seamless user experiences. 
-                    My workflow is powered by industry-standard tools like GitHub and Visual Studio Code, and I enhance every project with dynamic icons 
-                    from Font Awesome and fonts from Google Fonts Driven by the belief that a great design is not only visually appealing but also user-centered,
-                    I am always open to collaborations, freelance gigs, and full-time opportunities. Let's build something exceptional together!
+                    Hello! I'm Temiloluwa ✋, I build websites for small businesses and organisations to enhance their online presence quickly 
+                    and attract customers to their products. I specialize in HTML5, CSS3, Bootstrap 5, JAVASCRIPT, frontend libraries and 
+                    building of API to craft seamless user experiences.
+                    I am always open to collaborations, freelance gigs, and full-time opportunities. Let's build something exceptional together!💕.
                 </h5>
             </div>
         </div>
     </section>
 
-    <section class="container-fluid my-5 py-5" id="features">
+    <section class="container-fluid my-5 py-5 bg-black" id="features">
         <div class="container my-5 py-5">
             <div class="row text-center g-4">
                 <div class="col-md-4" data-aos="flip-up" data-aos-duration="1000">
@@ -245,7 +257,7 @@
                     <div class="card bgcol2 shadow border-0">
                         <div class="card-body text-white">
                             <i class="fa fa-clock fa-2x text-warning"></i>
-                            <h1 class="purecounter" data-purecounter-end="14" data-purecounter-duration="1" data-purecounter-pulse="5"></h1>
+                            <h1 class="purecounter" data-purecounter-end="18" data-purecounter-duration="1" data-purecounter-pulse="5"></h1>
                             <h4>Hours of Support</h4>
                         </div>
                     </div>
@@ -271,7 +283,7 @@
                 <div class="col-md-6">
                     CSS
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar bgcol2" style="width: 100%">100%</div>
+                    <div class="progress-bar bgcol2" style="width: 90%">90%</div>
                     </div>
                 </div>
             </div>
@@ -361,28 +373,29 @@
         </div>   
     </section> -->
 
-    <section class="container py-5" id="projects">
-        <div class="text-center">
-            <h1 class="display-4 fw-normal">Projects</h1>
-            <h4>Click on the images below to view the project websites</h4>
-        </div>
-        
-        <div class="row g-4 mt-5" data-aos="zoom-in-up">
-            <div class="col-6 col-md-3 border">
-                <a href="https://temmycoder.github.io/landrick" target="_blank"><img src="img/temmycoder-github-io-480x800phone-928a05.jpg" alt="img" class="img-fluid"></a>
-            </div>            
-
-            <div class="col-6 col-md-3">
-                <a href="https://temmycoder.github.io/Starlite" target="_blank"><img src="img/temmycoder-github-io-480x800phone-1410a6.jpg" alt="img" class="img-fluid" height="40%"></a>
+    <section class="container-fluid py-5 bg-black" id="projects">
+        <div class="container text-white">
+            <div class="text-center">
+                <h1 class="display-4 fw-normal">Projects</h1>
+                <h4>Click on the images below to view the project websites</h4>
             </div>
             
-            <div class="col-6 col-md-3">
-                <a href="https://temmycoder.github.io/bootslander" target="_blank"><img src="img/temmycoder-github-io-480x800phone-30a677.jpg" alt="img" class="img-fluid" height="40%"></a>
-
-            </div>
-            
-            <div class="col-6 col-md-3 border">
-                <a href="https://temmycoder.github.io/Winck" target="_blank"><img src="img/temmycoder-github-io-480x800phone-e29ce1.jpg" alt="img" class="img-fluid" height="40%"></a>
+            <div class="row g-4 mt-5" data-aos="zoom-in-up">
+                <div class="col-6 col-md-3 border">
+                    <a href="https://temmycoder.github.io/landrick" target="_blank"><img src="img/temmycoder-github-io-480x800phone-928a05.jpg" alt="img" class="img-fluid"></a>
+                </div>            
+    
+                <div class="col-6 col-md-3">
+                    <a href="https://temmycoder.github.io/Starlite" target="_blank"><img src="img/temmycoder-github-io-480x800phone-1410a6.jpg" alt="img" class="img-fluid" height="40%"></a>
+                </div>
+                
+                <div class="col-6 col-md-3">
+                    <a href="https://temmycoder.github.io/bootslander" target="_blank"><img src="img/temmycoder-github-io-480x800phone-30a677.jpg" alt="img" class="img-fluid" height="40%"></a>
+                </div>
+                
+                <div class="col-6 col-md-3 border">
+                    <a href="https://temmycoder.github.io/Winck" target="_blank"><img src="img/temmycoder-github-io-480x800phone-e29ce1.jpg" alt="img" class="img-fluid" height="40%"></a>
+                </div>
             </div>
         </div>
     </section>
@@ -517,11 +530,12 @@
 
                     <div>
                         <textarea rows="6" placeholder="Message" class="form-control" name="message"></textarea>
-                    </div><br><br>
+                    </div>
 
                     <div class="text-center">
-                        <button type="submit" style="border-radius: 50px; border: #ffffff;" 
-                        class="text-bg-success pe-4 ps-4 pt-2 pb-2" name="send">Send Message</button>
+                        <button type="submit" class="btn mt-4 px-5" style="background-color: #ff9900; border-radius: 20px; color: white;" name="submit">
+                            Submit
+                        </button>
                     </div>
                 </form>                      
             </div>
@@ -531,10 +545,10 @@
     <footer class="container-fluid text-center text-white bg-black mt-5">
         <div class="container pb-4 pt-5">
             <div class="mb-3">
-                <a href="https://linkedin.com/temmycoder/" class="mx-4 text-white icon-link-hover"><i class="fab fa-linkedin fs-2"></i></a>
-                <a href="https://instagram" class="mx-4 text-white"><i class="fab fa-instagram fs-2"></i></a>
-                <a href="https://facebook" class="mx-4 text-white"><i class="fab fa-facebook fs-2"></i></a>
-                <a href="https://twitter" class="mx-4 text-white"><i class="fab fa-twitter fs-2"></i></a>
+                <a href="https://linkedin.com/in/temmycoder27" target="_blank" class="mx-4 text-white icon-link-hover"><i class="fab fa-linkedin fs-2"></i></a>
+                <a href="https://www.instagram.com/temmycoder" target="_blank" class="mx-4 text-white"><i class="fab fa-instagram fs-2"></i></a>
+                <a href="https://www.facebook.com" target="_blank" class="mx-4 text-white"><i class="fab fa-facebook fs-2"></i></a>
+                <a href="https://twitter" target="_blank" class="mx-4 text-white"><i class="fab fa-twitter fs-2"></i></a>
             </div>
 
             <p>&copy; All Rights Reserved<br>
