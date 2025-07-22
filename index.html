@@ -513,23 +513,29 @@
             </div>
 
             <div class="col-md-8 container">
-                <form method="post" action="">
+                <form method="post" action="contact.php">
                     <div class="row">
                         <div class="col-6">
-                            <input type="text" placeholder="First Name" name="first_name" required maxlength="30" minlength="3" class="form-control">
+                            <input type="text" placeholder="First Name" name="fname" required class="form-control">
                         </div>
 
                         <div class="col-6">
-                            <input type="text" placeholder="Last Name" name="last_name" minlength="2" class="form-control">
+                            <input type="text" placeholder="Last Name" name="lname" class="form-control" required>
+                        </div>
+                    </div><br><br>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <input type="email" placeholder="Your Email" name="email" class="form-control" required>
+                        </div>
+
+                        <div class="col-6">
+                            <input type="tel" pattern="[0-9]{11}" placeholder="Phone Number" name="phone" class="form-control" required>
                         </div>
                     </div><br><br>
 
                     <div>
-                        <input type="email" placeholder="Your Email" name="sender_email" class="form-control">
-                    </div><br><br>
-
-                    <div>
-                        <textarea rows="6" placeholder="Message" class="form-control" name="message"></textarea>
+                        <textarea rows="6" placeholder="Message" class="form-control" name="msg" required></textarea>
                     </div>
 
                     <div class="text-center">
@@ -537,7 +543,7 @@
                             Submit
                         </button>
                     </div>
-                </form>                      
+                </form>
             </div>
         </div>
     </section>
@@ -547,8 +553,8 @@
             <div class="mb-3">
                 <a href="https://linkedin.com/in/temmycoder27" target="_blank" class="mx-4 text-white icon-link-hover"><i class="fab fa-linkedin fs-2"></i></a>
                 <a href="https://www.instagram.com/temmycoder" target="_blank" class="mx-4 text-white"><i class="fab fa-instagram fs-2"></i></a>
-                <a href="https://www.facebook.com" target="_blank" class="mx-4 text-white"><i class="fab fa-facebook fs-2"></i></a>
-                <a href="https://twitter" target="_blank" class="mx-4 text-white"><i class="fab fa-twitter fs-2"></i></a>
+                <a href="https://www.facebook.com/share/1Y1e2oR97Y/?mibextid=LQQJ4d" target="_blank" class="mx-4 text-white"><i class="fab fa-facebook fs-2"></i></a>
+                <a href="https://www.twitter.com/temmycoder" target="_blank" class="mx-4 text-white"><i class="fab fa-x-twitter fs-2"></i></a>
             </div>
 
             <p>&copy; All Rights Reserved<br>
