@@ -1,9 +1,9 @@
 <?php 
 
 $servername = 'localhost';
-$username = 'root';
-$password = '';
-$dbname = 'temmycoder';
+$username = 'temmyco1_temmy';
+$password = 'teesmart270809';
+$dbname = 'temmyco1_temmycoder';
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
@@ -24,6 +24,6 @@ if(isset($_POST['submit'])){
   if($query){
     header("location: index.html");
   }else{
-    echo "failed to insert ";
+    echo "failed to insert";
   }
 }
