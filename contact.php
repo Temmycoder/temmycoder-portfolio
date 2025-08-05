@@ -1,4 +1,10 @@
 <?php 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+require 'PHPMailer/PHPMailer/src/Exception.php';
+require 'PHPMailer/PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/PHPMailer/src/SMTP.php';
+require 'vendor/autoload.php';
 
 $servername = 'localhost';
 $username = 'temmyco1_temmy';
@@ -24,6 +30,37 @@ if(isset($_POST['submit'])){
   if($query){
     header("location: index.html");
   }else{
-    echo "failed to insert";
+    echo "<div class='alert alert-danger'>Failed to send</div>";
   }
+            
+  $mail = new PHPMailer(true);
+  try {
+      //Server settings
+      $mail->isSMTP();
+      $mail->Host       = 'mail.temmycoderdev.com.ng';
+      $mail->SMTPAuth   = true;
+      $mail->Username   = 'temmyco1';             // SMTP username
+      $mail->Password   = 'teesmart270809';                   // SMTP password
+      $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;      // Enable TLS encryption, ssl also accepted
+      $mail->Port       = 465;                              // TCP port to connect to
+
+      //Recipients-interface
+      $mail->setFrom('temiloluwa@temmycoderdev.com.ng', 'TemmyCoder');
+      $mail->addAddress($email,);     // Add a recipient
+
+      // Content
+      $mail->isHTML(true);    // Set email format to HTML
+      $mail->Subject = 'Temmycoder';
+      $mail->Body    = "Thank you for reaching out $fname, kindky chat this number for further conversations \n Tel: 07066246499";
+      $mail->AltBody = "hello";
+
+      $mail->send();
+      echo'Email has been sent';
+  } catch (Exception $e) {
+      $error_msg = "Password reset email could not be sent. Mailer Error: {$mail->ErrorInfo}";
+
+  }
+
+
 }
+?>
