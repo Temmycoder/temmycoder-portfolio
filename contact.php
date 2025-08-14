@@ -51,18 +51,42 @@ if(isset($_POST['submit'])){
     // Content
     $mail->isHTML(true);    // Set email format to HTML
     $mail->Subject = 'Temmycoder';
-    $mail->Body    = "Thank you for reaching out on www. $fname $lname, kindly chat this number on whatsapp or dial for further communications \n Tel: 07066246499";
-    $mail->AltBody = "hello";
+    $mail->Body    = "You filled a form on temmycoderdev.com.ng as $fname $lname, kindly chat 07066246499 on whatsapp or dial for further communications. You can also mail oladutemutemiloluwa@icloud.com";
+    $mail->AltBody = "You filled a form on temmycoderdev.com.ng as $fname $lname, kindly chat 07066246499 on whatsapp or dial for further communications. You can also mail oladutemutemiloluwa@icloud.com";
 
     $mail->send();
-    echo'Email has been sent';
   } catch (Exception $e) {
     echo"Email could not be sent. Mailer Error: {$mail->ErrorInfo}";
 
   }
   
+  $mail2 = new PHPMailer(true);
+  try {
+    $mail2->isSMTP();
+    $mail2->Host       = 'mail.temmycoderdev.com.ng';
+    $mail2->SMTPAuth   = true;
+    $mail2->Username   = 'temiloluwa@temmycoderdev.com.ng';             // SMTP username note: mail should be applied here 
+    $mail2->Password   = 'teesmart270809';                   // SMTP password
+    $mail2->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;      // Enable TLS encryption, ssl also accepted
+    $mail2->Port       = 465;                              // TCP port to connect to
+
+    //Recipients-interface
+    $mail2->setFrom('temiloluwa@temmycoderdev.com.ng', 'TemmyCoder');
+    $mail2->addAddress('oladutemutemiloluwa@icloud.com');     // Add a recipient
+
+    // Content
+    $mail2->isHTML(true);    // Set email format to HTML
+    $mail2->Subject = 'Temmycoder';
+    $mail2->Body    = "$fname $lname just filled your portfolio's contact form";
+    $mail2->AltBody = "$fname $lname just filled your portfolio's contact form";
+
+    $mail2->send();
+  } catch (Exception $e) {
+    echo "Email could not be sent. Mailer Error: {$mail2->ErrorInfo}";
+  }
+
   if($query){
-    echo'submited form';
+    header('index.html');
   }else{
     echo "<div class='alert alert-danger'>Failed to send</div>";
   }

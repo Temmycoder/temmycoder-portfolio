@@ -1,5 +1,5 @@
 RewriteEngine On
-RewriteBase /temmycoder/
+RewriteBase /temmycoder-portfolio/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.+)$ index.html?url=$1 [QSA,L]
