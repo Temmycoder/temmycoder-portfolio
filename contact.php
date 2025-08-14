@@ -6,10 +6,17 @@ require 'PHPMailer/PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/PHPMailer/src/SMTP.php';
 require 'vendor/autoload.php';
 
+// $servername = 'localhost';
+// $username = 'temmyco1_temmy';
+// $password = 'teesmart270809';
+// $dbname = 'temmyco1_temmycoder';
+
+
+// for local server connection
 $servername = 'localhost';
-$username = 'temmyco1_temmy';
-$password = 'teesmart270809';
-$dbname = 'temmyco1_temmycoder';
+$username = 'root';
+$password = '';
+$dbname = 'temmycoder';
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
@@ -32,19 +39,19 @@ if(isset($_POST['submit'])){
     $mail->isSMTP();
     $mail->Host       = 'mail.temmycoderdev.com.ng';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'temmyco1';             // SMTP username
+    $mail->Username   = 'temiloluwa@temmycoderdev.com.ng';             // SMTP username
     $mail->Password   = 'teesmart270809';                   // SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;      // Enable TLS encryption, ssl also accepted
     $mail->Port       = 465;                              // TCP port to connect to
 
     //Recipients-interface
     $mail->setFrom('temiloluwa@temmycoderdev.com.ng', 'TemmyCoder');
-    $mail->addAddress($email,);     // Add a recipient
+    $mail->addAddress($email);     // Add a recipient
 
     // Content
     $mail->isHTML(true);    // Set email format to HTML
     $mail->Subject = 'Temmycoder';
-    $mail->Body    = "Thank you for reaching out $fname, kindly chat this number for further conversations \n Tel: 07066246499";
+    $mail->Body    = "Thank you for reaching out on www. $fname $lname, kindly chat this number on whatsapp or dial for further communications \n Tel: 07066246499";
     $mail->AltBody = "hello";
 
     $mail->send();
@@ -55,7 +62,7 @@ if(isset($_POST['submit'])){
   }
   
   if($query){
-    header("location: index.html");
+    echo'submited form';
   }else{
     echo "<div class='alert alert-danger'>Failed to send</div>";
   }
